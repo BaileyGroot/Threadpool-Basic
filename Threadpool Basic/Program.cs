@@ -39,6 +39,8 @@ namespace ThreadPooling
             }
         }
 
+        // ThreadPool.QueueUserWorkItem(new WaitCallback(tpd.task1)
+        // You don't need "new WaitCallback" but it is there because you might encounter it in the future.
         // Queues a method for execution, and specifies an object containing data to be used by the method. The method executes when a thread pool thread becomes available.
         static void Process(object callback)
         {
